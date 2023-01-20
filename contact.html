@@ -1,0 +1,483 @@
+<!-- 2022-2023 Website Model // Made with BootStrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact-Page</title>
+
+  <!-- BootStrap style sheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+
+  <!-- Personal style sheets -->
+  <link href="styles/main.css" rel="stylesheet" />
+  <!-- <link href="styles/blog.css" rel="stylesheet" /> -->
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <!-- navbar section // no style guide in html-->
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">&lt;/C4&gt;</a>
+      <!-- For the mobile versions drop down -->
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <!-- first child -->
+        <span class="bar"></span>
+        <!-- second child -->
+        <span class="bar"></span>
+        <!-- third child -->
+      </div>
+
+      <ul class="navbar__menu">
+        <!-- initial navbar section -->
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links" id="home-page"><b>Home</b></a>
+        </li>
+        <li class="navbar__item">
+          <a href="blog.html" class="navbar__links" id="home-page"><b>Blog</b></a>
+        </li>
+        <li class="navbar__btn">
+          <a href="#home" class="button" id="home-page">Contact</a>
+          <!--target="_blank"- to go to new page-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="suggestion" id="home">
+    <!-- suggestion section // style in html suggestion section-->
+    <style>
+      .suggestion {
+        background: #6441A5 !important;
+        padding: 3rem 0 3rem 0;
+      }
+
+      #sug_h2 {
+        color: #ffffff;
+        font-size: 2.25rem;
+      }
+
+      #sug_card {
+        margin: auto;
+        background: #202020;
+        border-color: #202020 !important;
+        padding: .25rem;
+        border-radius: 20px;
+      }
+
+      #sug_btn {
+        align-self: center;
+        color: #ffffff;
+      }
+
+      .forms {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .forms input {
+        margin: 0;
+      }
+    </style>
+    <div class="container marketing">
+      <div class="col-md-9" id="sug_card">
+        <div class="h-50 p-5 rounded-3">
+          <h2 id="sug_h2">Have Any <span>Suggestions?</span></h2>
+          <br />
+          <form class="forms" name="google-sheet-suggestion">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label fs-5">Name</label>
+              <input type="name" name="Name" class="form-control" id="exampleFormControlInput1" placeholder="name"
+                required />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label fs-5">Email address</label>
+              <input type="email" name="Email" class="form-control" id="exampleFormControlInput1"
+                placeholder="name@example.com" required />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label fs-5">Suggestion</label>
+              <textarea class="form-control" name="Suggestion" id="exampleFormControlTextarea1"
+                placeholder="I think we should..., I would like to see..., Can we code..." rows="3" required></textarea>
+            </div>
+            <br />
+            <button class="btn fs-5" type="submit"><span>Submit</span></button>
+          </form>
+          <span id="sug"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="skew-c"></div>
+
+  <section class="contacts">
+    <!-- contacts section // style in html contacts section-->
+    <style>
+      .contacts {
+        background: #141414 !important;
+        padding: 12rem 0 6rem 0;
+        justify-content: center;
+      }
+
+      /* Add rounded corners to the top left and the top right corner of the image */
+      img {
+        border-radius: 25px;
+        width: 20rem;
+        height: auto;
+      }
+
+      .qr {
+        border-radius: 10px;
+        width: 12.5rem;
+        height: auto;
+      }
+
+      /* Float four columns side by side */
+      .columns {
+        margin: 3rem 3rem 3rem 3rem;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Remove extra left and right margins, due to padding in columns */
+      .rows {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center
+      }
+
+      /* Clear floats after the columns */
+      .rows:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the counter cards */
+      .cards {
+        width: 20rem;
+        position: relative;
+        text-align: center;
+        border-radius: 25px;
+        background-color: #fff
+      }
+
+      .cards:hover {
+        transform: scale(1.1);
+        transition: transform .2s;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #6441A5;
+        border-radius: 23px;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      #discord_btn {
+        font-size: 1.15rem;
+        background-color: #202020;
+      }
+
+      #discord_btn:hover {
+        background-color: #928dab;
+      }
+
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .columns {
+          width: 70%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+    <div class="row justify-content-center">
+      <div class="columns">
+        <div class="container">
+          <div class="cards"><img src="images/email.png" alt="Nature" class="discord">
+            <div class="overlay">
+              <div class="text">c4@cornellcollege.edu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="container">
+          <div class="cards"><img src="images/discord.svg" alt="Nature" class="discord">
+            <div class="overlay">
+              <div class="text"><img src="images/qr.jpg" alt="Nature" class="qr"><br>
+                </br> <a class="btn btn-lg btn-primary" href="https://discord.gg/BYZrufr" id="discord_btn">Join The
+                  Discord!</a></div><!-- WILL NEED TO SWAP DISCORD LINK AFTER 2023 YEAR!!! -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="members">
+    <!-- member section // style in html members section-->
+    <style>
+      .members {
+        background: linear-gradient(#141414 10%, #202020 90%);
+        padding: 3rem 0 5rem 0;
+      }
+
+      .memberPic {
+        border-radius: 50%;
+        width: 15rem;
+        resize: 10rem;
+        top: 30rem;
+        height: auto;
+       
+      }
+
+      #memberBtn {
+        background-color: #928dab;
+      }
+
+      #memberBtn:hover {
+        background-color: #a861ff;
+      }
+
+      .accordion-body p {
+        color: #ffffff;
+        text-align: start;
+        padding-left: 5rem;
+        font-size: 1.05rem;
+      }
+
+      .fw-normal {
+        color: #ffffff
+      }
+
+      .col-lg-3 {
+        text-align: center;
+      }
+
+      /* For 4 members | col-lg-4 for 3 members */
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 1200px) {
+        .memberPic {
+          width: 12rem;
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        .memberPic {
+          width: 16rem;
+        }
+      }
+    </style>
+    <div class="container marketing">
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-3 p-4"><!-- first member -->
+          <img src="images/file.jpg" alt="Nature" class="memberPic">
+          <br>
+          <h2 class="fw-normal"><br />President</h2>
+          <p class="description">Handles events and overlooks the club, setting up meetings, and addressing any problems
+          </p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne" id="memberBtn">
+                View Details &raquo;
+              </button><br />
+            </h2>
+          </div>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><br />
+                Name: <code>Ethan Kupka</code><br />
+                Year: <code>Class of 2023</code><br />
+                Email: <code>ekupka23@cornellcollege.edu</code><br />
+                Fun Fact: <code>Likes to play lacrosse</code></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-4"><!-- second member -->
+          <img src="images/memPic.jpg" alt="Nature" class="memberPic">
+          <h2 class="fw-normal"><br />Vice President</h2>
+          <p>Handles the social media platforms and takes over roles of the president when needed</p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseOne" id="memberBtn">
+                View Details &raquo;
+              </button><br />
+            </h2>
+          </div>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><br />
+                Name: <code>First Last</code><br />
+                Year: <code>Class of 20##</code><br />
+                Email: <code>name@cornellcollege.edu</code><br />
+                Fun Fact: <code>Likes to draw</code></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-4"><!-- third member -->
+          <img src="images/file.jpg" alt="Nature" class="memberPic">
+          <h2 class="fw-normal"><br />Treasure</h2>
+          <p>Handles the budget of the club, seeing how much money is needed for upcoming events</p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                aria-expanded="true" aria-controls="collapseOne" id="memberBtn">
+                View Details &raquo;
+              </button><br />
+            </h2>
+          </div>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><br />
+                Name: <code>Mac Coleman</code><br />
+                Year: <code>Class of 2024</code><br />
+                Email: <code>mcoleman24@cornellcollege.edu</code><br />
+                Fun Fact: <code>Likes to draw</code></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 p-4">
+          <!-- fourth member You have to change the col-lg-4 to col-lg-3 on the above members!-->
+          <img src="images/memPic.jpg" alt="Nature" class="memberPic">
+          <br>
+          <h2 class="fw-normal"><br />Secretary</h2>
+          <p class="description">Handles spreading the word of current events, posting on socials, and writes the
+            meeting notes</p>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                aria-expanded="true" aria-controls="collapseFour" id="memberBtn">
+                View Details &raquo;
+              </button><br />
+            </h2>
+          </div>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><br />
+                Name: <code>Matt Norwood</code><br />
+                Year: <code>Class of 2025</code><br />
+                Email: <code>mnorwood25@cornellcollege.edu</code><br />
+                Fun Fact: <code>Likes to work on his personal video game</code></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </section>
+
+  <footer>
+    <!-- footer section // no style guide in html -->
+    <div class="footer__container">
+      <div class="social__media">
+        <div class="row align-items-center" id="flex">
+          <div class="col-sm-3" id="name">
+            <a href="#home" id="footer__logo">&lt;/C4&gt;</a>
+          </div>
+          <div class="col-4" id="footer_links">
+            <div>
+              <ul class="footer_nav">
+                <li class="footer__item">
+                  <a href="index.html" class="footer__links" id="home-page"><b>About</b></a>
+                </li>
+                <li class="footer__item">
+                  <a href="blog.html" class="footer__links" id="home-page"><b>Blog</b></a>
+                </li>
+                <li class="footer__item">
+                  <a href="#home" class="footer__links" id="home-page"><b>Contact</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="description overflow-hidden text-center">
+              <hr />
+              Designed by Ethan Kupka @ 2023
+            </div>
+          </div>
+          <div class="col-5" id="contact_email">
+            <div class="email_text">JOIN<span> our newsletter</span></div>
+            <div>
+              <form name="google-sheet-email">
+                <div class="input-group">
+                  <input type="email" name="Email" class="form-control" placeholder="Enter Cornell College Email"
+                    required aria-label="Enter Cornell College Email" aria-describedby="button-addon2" />
+                  <button class="button1" type="submit"><span>Join</span></button>
+                </div>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BootStrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- Personal JS -->
+  <script src="main.js"></script>
+  <!-- Suggestion JS -->
+  <script>
+    const sugURL = 'https://script.google.com/macros/s/AKfycbzwI3oWenyHRsosnPcwaoQvCtukKFzTvt9Uwp9ktI_depmLzWmCumBW2NM2d8Mt2bgMfg/exec'
+    const forms = document.forms['google-sheet-suggestion']
+    const sug = document.getElementById('sug')
+
+    forms.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(sugURL, { method: 'POST', body: new FormData(forms) })
+        .then(response => {
+          console.log('Success!', response)
+          msg.innerHTML = "Thank you for sub"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          },
+            5000)
+          forms.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>

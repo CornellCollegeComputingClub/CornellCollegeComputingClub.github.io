@@ -1,0 +1,528 @@
+<!-- 2022-2023 Website Model // Made with BootStrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home-Page</title>
+
+  <!-- BootStrap style sheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+  <!-- Personal style sheets -->
+  <link href="styles/main.css" rel="stylesheet" />
+  <!-- <link href="styles/blog.css" rel="stylesheet" /> -->
+</head>
+
+
+<body>
+  <nav class="navbar">
+    <!-- navbar section // no style guide in html-->
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">&lt;/C4&gt;</a>
+      <!-- For the mobile versions drop down -->
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <!-- first child -->
+        <span class="bar"></span>
+        <!-- second child -->
+        <span class="bar"></span>
+        <!-- third child -->
+      </div>
+
+      <ul class="navbar__menu">
+        <!-- initial navbar section -->
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page"><b>Home</b></a>
+        </li>
+        <li class="navbar__item">
+          <a href="blog.html" class="navbar__links" id="home-page"><b>Blog</b></a>
+        </li>
+        <li class="navbar__btn">
+          <a href="contact.html" class="button" id="home-page">Contact</a>
+          <!--target="_blank"- to go to new page-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="intro_container" id="home">
+    <!-- intro section // style in html intro_container section-->
+    <style>
+      /* Style for welcome vid */
+      .intro_container {
+        background: #141414;
+        height: 45rem;
+        position: relative;
+        z-index: 0;
+      }
+
+      #background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .intro_text {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+
+      .intro_text p {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+        overflow: hidden;
+        color: #fff;
+        text-shadow: 0 0 0.02em rgb(0, 0, 0), 0 0 0.1em black;
+      }
+
+      .intro_text p span.typed-text {
+        font-weight: normal;
+      }
+
+      .intro_text p span.cursor {
+        display: inline-block;
+        margin-left: 0.1rem;
+        width: 3px;
+        animation: blink 1s infinite;
+      }
+
+      .intro_text p span.cursor.typing {
+        animation: none;
+      }
+
+      @keyframes blink {
+        0% {
+          background-color: #fff;
+          text-shadow: 0 0 0.02em rgb(0, 0, 0), 0 0 0.1em black;
+        }
+
+        49% {
+          background-color: #fff;
+          text-shadow: 0 0 0.02em rgb(0, 0, 0), 0 0 0.1em black;
+        }
+
+        50% {
+          background-color: transparent;
+        }
+
+        99% {
+          background-color: transparent;
+        }
+
+        100% {
+          background-color: #fff;
+          text-shadow: 0 0 0.02em rgb(0, 0, 0), 0 0 0.1em black;
+        }
+      }
+    </style>
+    <video id="background-video" autoplay loop muted>
+      <source src="images/typingHome.mp4" type="video/mp4" />
+    </video>
+    <div class="intro_text">
+      <p>><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+    </div>
+  </section>
+
+  <section class="about">
+    <!-- about section // style in html about section-->
+    <style>
+      .text-muted {
+        color: var(--bs-link-hover-color) !important;
+      }
+
+      .about {
+        background: #141414 !important;
+        padding: 5rem 0 8rem 0;
+      }
+
+      .lead span {
+        color: #fff;
+      }
+
+      .responsive {
+        height: 30rem;
+        width: 100%;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        object-fit: cover;
+      }
+    </style>
+    <div class="container marketing">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">
+            Who are we?
+            <span class="text-muted"><br />A Computer Science Club</span>
+          </h2>
+          <br />
+          <p class="lead">
+            We are the Cornell College computer science club. <span> We strive to develop our skills and create a strong
+              friendly
+              environment.</span> We host fun events like a annual hackathon, server-tour, and movie nights! We want to
+            build a <span>close community</span> to
+            hone our computer science skills where you can present your latest experiences and get healthy feed back
+            from your peers!
+          </p>
+          <br />
+        </div>
+        <div class="col-md-5">
+          <img src="images/background.png" alt="Nature" class="responsive">
+        </div>
+      </div>
+    </div>
+    <div class="skew-cc"></div>
+  </section>
+
+  <section class="additional_info">
+    <!-- additional_info section // style in html additional_info section-->
+    <style>
+      /* Goals and Meeting ------------------------------------------------------------------- */
+      .accordion {
+        /*--bs-accordion-btn-active-icon:red;*/
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(149, 142, 153, 0.25) !important;
+        --bs-accordion-active-color: #fff;
+        --bs-accordion-active-bg: #888889 !important;
+        --bs-accordion-bg: #ebe6e6;
+        --bs-accordion-border-color: #141414;
+      }
+
+      .additional_info {
+        background: linear-gradient(#6441A5 10%, #202020 90%);
+        padding: 5rem 0 8rem 0;
+      }
+
+      #meeting,
+      .p {
+        background-color: #141414;
+        color: #ebe6e6;
+        font-size: 1.15rem;
+      }
+
+      #about {
+        color: #a861ff;
+        font-size: 1.10rem;
+        font-style: italic;
+      }
+
+      #goals,
+      .h2 {
+        background-color: #141414;
+        color: #ebe6e6;
+      }
+
+      .btn {
+        align-self: center;
+      }
+    </style>
+    <div class="container marketing">
+      <!-- <hr class="top_divider" /> -->
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 p-3">
+          <div class="h-100 p-5 rounded-3" id="meeting">
+            <h2 class="meet_h2">When Do We Meet?</h2>
+            <br />
+            <p><span id="about">When?</span> 1st & 3rd Tuesday of every block</p>
+            <p><span id="about">Where?</span> 218 West Science Hall</p>
+            <p><span id="about">Time?</span> 3:30pm - 4:30pm</p>
+            <br />
+            <a class="btn btn-lg" href="contact.html">Get in the loop</a>
+          </div>
+        </div>
+        <br />
+        <div class="col-md-6 p-3">
+          <div class="h-100 p-5 rounded-3" id="goals">
+            <div class="accordion" id="accordionExample">
+              <h2>Goals</h2>
+              <br />
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Career
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Our number one goal is to enhance your <code>.career</code>
+                      opportunities.
+                      With our group projects and meetings going over job prep,
+                      this is a good place to develop new skills to add to your CS resume.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Community
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We are changing C4 to host a mindset of having a close
+                      <code>.community</code> of the computer science students at Cornell. We hope to develop lasting
+                      friendships and contacts for down the road.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Fun
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We want you to have
+                      <code>.fun</code>! Computer Science has a poor stereo type of not being exciting. We are here to
+                      change that view; to show the joys of computer science though our events and projects!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide_show">
+    <!-- slide_show section // style in html slide_show section-->
+    <style>
+      .slide_show {
+        background: var(--clr-bg);
+        padding-bottom: 4rem;
+      }
+
+      /* Since positioning the image, we need to help out the caption */
+      .carousel-caption {
+        bottom: 8rem;
+        z-index: 10;
+      }
+
+      #slide_text h1,
+      #slide_text p {
+        text-shadow: 1px 1px 1px #000000, 0 0 1em rgb(0, 0, 0), 0 0 0.9em rgb(155, 48, 255);
+      }
+
+      /* Declare heights because of positioning of img element */
+      .carousel-item {
+        height: 32rem;
+      }
+
+      #slide {
+        width: 100%;
+        object-fit: fill;
+        background-size: 100%;
+      }
+
+      /* Prob with responsive */
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      /* @media (max-width: 768px) {
+        .carousel-item {
+          height: 22rem;
+        }/* Prob with responsive 
+      }*/
+    </style>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+            <image href="images/sleek.jpg" id="slide" />
+          </svg>
+
+          <div class="container" id="slide_text">
+            <div class="carousel-caption text-start">
+              <h1>What do you want?</h1>
+              <p>
+                C4 is changing and we want to hear from you! Got any ideas?
+              </p>
+              <p><a class="btn btn-lg" href="contact.html">Suggestions?</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+            <image href="images/group.jpg" id="slide" />
+            <!-- <image href="images/fair.jpg" height="100%" width="100%" object-fit="cover"/> -->
+          </svg>
+
+          <div class="container" id="slide_text">
+            <div class="carousel-caption">
+              <h1>First meeting</h1>
+              <p>
+                C4 had the chance to meet its new 2022 members!
+              </p>
+              <p>
+              <p><a class="btn btn-lg" href="blog.html">Read More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <rect width="100%" height="100%" fill="#777" />
+            <image href="images/motherboard.jpg" id="slide" />
+          </svg>
+
+          <div class="container" id="slide_text">
+            <div class="carousel-caption text-end">
+              <h1>Up and coming event!</h1>
+              <p>
+                We plan to host a Hackathon during the second semester of 2023 year!
+              </p>
+              <p>
+                <a class="btn btn-lg" href="blog.html">Read More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <footer>
+    <!-- footer section // no style guide in html -->
+    <div class="footer__container">
+      <div class="social__media">
+        <div class="row align-items-center" id="flex">
+          <div class="col-sm-3" id="name">
+            <a href="#home" id="footer__logo">&lt;/C4&gt;</a>
+          </div>
+          <div class="col-4" id="footer_links">
+            <div>
+              <ul class="footer_nav">
+                <li class="footer__item">
+                  <a href="#home" class="footer__links" id="home-page"><b>About</b></a>
+                </li>
+                <li class="footer__item">
+                  <a href="blog.html" class="footer__links" id="home-page"><b>Blog</b></a>
+                </li>
+                <li class="footer__item">
+                  <a href="blog.html" class="footer__links" id="home-page"><b>Contact</b></a>
+                </li>
+              </ul>
+            </div>
+            <div class="description overflow-hidden text-center">
+              <hr />
+              Designed by Ethan Kupka @ 2023
+            </div>
+          </div>
+          <div class="col-5" id="contact_email">
+            <div class="email_text">JOIN<span> our newsletter</span></div>
+            <div>
+              <form name="google-sheet-email">
+                <div class="input-group">
+                  <input type="email" name="Email" class="form-control" placeholder="Enter Cornell College Email"
+                    required aria-label="Enter Cornell College Email" aria-describedby="button-addon2" />
+                  <button class="button1" type="submit"><span>Join</span></button>
+                </div>
+              </form>
+              <span id="msg"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BootStrap JS -->
+  <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- Personal JS -->
+  <script src="main.js"></script>
+  <!-- Home Typing JS -->
+  <script>
+    /* Home Typing Text ------------------------------------------------------------------- */
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    const textArray = ["Welcome!", "We are C4"];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000; // Delay between current and next text
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+      if (charIndex < textArray[textArrayIndex].length) {
+        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingDelay);
+      }
+      else {
+        cursorSpan.classList.remove("typing");
+        setTimeout(erase, newTextDelay);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+        typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+      }
+      else {
+        cursorSpan.classList.remove("typing");
+        textArrayIndex++;
+        if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+        setTimeout(type, typingDelay + 1100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+      if (textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+  </script>
+</body>
+
+</html>
