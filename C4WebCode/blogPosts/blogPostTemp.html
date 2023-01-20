@@ -1,0 +1,269 @@
+<!-- 2022-2023 Website Model // Made with BootStrap -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-Post-Page</title>
+
+    <!-- BootStrap style sheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <!-- Personal style sheets -->
+    <link href="../styles/main.css" rel="stylesheet" />
+    <!-- <link href="custom.scss" rel="stylesheet" /> -->
+    <link href="../styles/blog.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!-- <style>@import url("https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap");</style> -->
+    <nav class="navbar">
+        <!-- navbar section // no style guide in html-->
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">&lt;/C4&gt;</a>
+            <!-- For the mobile versions drop down -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <!-- first child -->
+                <span class="bar"></span>
+                <!-- second child -->
+                <span class="bar"></span>
+                <!-- third child -->
+            </div>
+
+            <ul class="navbar__menu">
+                <!-- initial navbar section -->
+                <li class="navbar__item">
+                    <a href="../index.html" class="navbar__links" id="home-page"><b>Home</b></a>
+                </li>
+                <li class="../navbar__item">
+                    <a href="../blog.html" class="navbar__links" id="home-page"><b>Blog</b></a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="../contact.html" class="button" id="home-page">Contact</a>
+                    <!--target="_blank"- to go to new page-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="post" id="home">
+        <!-- about section // style in html about section-->
+        <style>
+            .post {
+                background-color: #202020;
+                padding: 2rem;
+            }
+
+            #title {
+                margin-top: 1rem;
+            }
+
+            .crumb {
+                margin: 0 0 4rem 2rem;
+                overflow-x: hidden !important;
+            }
+
+            .about {
+                background: #202020 !important;
+                padding: 5rem 0 8rem 0;
+            }
+
+            .main span {
+                color: rgb(212, 170, 254);
+            }
+
+            .main {
+                color: #fff;
+                font-size: 1.20rem;
+                font-weight: 150;
+            }
+
+            .responsive {
+                height: 30rem;
+                width: 100%;
+                border-radius: 1.5rem;
+                padding: 1rem;
+                object-fit: cover;
+            }
+
+            .responsives {
+                height: 20rem;
+                width: 100%;
+                border-radius: 1.5rem;
+                padding: 1rem;
+                object-fit: cover;
+            }
+
+            .past {
+                color: #fff;
+            }
+
+            #big:hover, #smaller:hover{
+                transform: scale(1.02);
+                transition: transform .2s;
+              }
+        </style>
+        <div class="crumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item" id="past"><a class="past" href="../blog.html"><H6>All Posts</H6></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Clicked Post</li>
+            </ol>
+        </div>
+        <div class="container marketing">
+            <div class="row featurette">
+                <div class="col-md-5">
+                    <img src="postImages/bootstrap.png" alt="Nature" class="responsive" id="big">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1" id="title">
+                        Title
+                        <span class="text-muted"><br />By: Name</span>
+                    </h2>
+                    <br />
+                    <p class="main">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                      deserunt mollit anim id est laborum.
+                    </p>
+                    <br />
+                </div>
+            </div>
+            <br />
+            <p class="main">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.
+            </p>
+            <br />
+        </div>
+
+        <br>
+        <div class="container marketing">
+            <div class="row featurette">
+                <div class="col-md-8">
+                    <p class="main">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                      deserunt mollit anim id est laborum. 
+                        Sass. <span>Sass is basically an ramped-up version of CSS adding more options to the code, making the styling 
+                        process quicker in the future.</span> Getting Started with Sass is pretty easy. You would go to their website and copy their 
+                        command line code for installation and paste it into your terminal. Then you would make a <code>'.scss'</code> file. But to link this 
+                        to a website can complicated. The file can't be linked to the Html like a CSS or a js file,  
+                        an extension has to be downloaded to watch the <code>'.scss'</code> file on VScode and map it to a CSS file where it can be linked to
+                        the Html page.
+                    </p>
+                    <br />
+                </div>
+                <div class="col-md-4">
+                    <img src="postImages/sass.jpg" alt="Nature" class="responsives" id="smaller">
+                </div>
+            </div>
+            <br />
+            <p class="main">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.<span> 
+                     The first and easiest option was making your own style sheet and overwriting Bootstraps Sass files by linking it after it in the Html file. 
+                    </span> This is not advised due to the fact it is efficient and can get confusing after a certain point.<span> TLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                      deserunt mollit anim id est laborum.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                     dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                     deserunt mollit anim id est laborum.
+            <br />
+            <br />
+            <p class="main">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.
+            </p>
+            <br />
+        </div>
+    </section>
+
+    <!-- <section class="WIP">
+      <style>
+        .img {
+          right:50rem;
+        }
+      </style>
+      <div id="circle-shape-example">
+        <img src="images/csHero.jpg" alt="something cool" class="curve"><h1>KiwiFruit</h1>
+      
+        <p>This is kiwifruit: originally called “yang tao”, “melonette” or Chinese gooseberry. Cultivated in its fuzzy variety from Chinese imports, the fruit proved popular with American military servicemen stationed in New Zealand during World War II, with commercial export to the United States starting after the end of the war. In California, the fruit was rebranded as “kiwifruit” due to its resemblance to New Zealand’s national bird. However, it is not a “kiwi”, which is also the demonym for native New Zealanders. Saying “I’m going to eat a kiwi” implies that you are either a cannibal or planning to dine on an endangered flightless bird.
+      </div>
+    </section> -->
+
+    <footer>
+        <!-- footer section // no style guide in html -->
+        <div class="footer__container">
+            <div class="social__media">
+                <div class="row align-items-center" id="flex">
+                    <div class="col-sm-3" id="name">
+                        <a href="#home" id="footer__logo">&lt;/C4&gt;</a>
+                    </div>
+                    <div class="col-4" id="footer_links">
+                        <div>
+                            <ul class="footer_nav">
+                                <li class="footer__item">
+                                    <a href="..//index.html" class="footer__links" id="home-page"><b>About</b></a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="../blog.html" class="footer__links" id="home-page"><b>Blog</b></a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="../contact.html" class="footer__links" id="home-page"><b>Contact</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="description overflow-hidden text-center">
+                            <hr />
+                            Designed by Ethan Kupka @ 2023
+                        </div>
+                    </div>
+                    <div class="col-5" id="contact_email">
+                        <div class="email_text">JOIN<span> our newsletter</span></div>
+                        <div>
+                            <form name="google-sheet-email">
+                                <div class="input-group">
+                                    <input type="email" name="Email" class="form-control"
+                                        placeholder="Enter Cornell College Email" required
+                                        aria-label="Enter Cornell College Email" aria-describedby="button-addon2" />
+                                    <button class="button1" type="submit"><span>Join</span></button>
+                                </div>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BootStrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- Personal JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
