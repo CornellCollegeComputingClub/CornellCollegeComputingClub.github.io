@@ -17,7 +17,6 @@
   <!-- <link href="styles/blog.css" rel="stylesheet" /> -->
 </head>
 
-
 <body>
   <nav class="navbar">
     <!-- navbar section // no style guide in html-->
@@ -31,7 +30,7 @@
         <!-- second child -->
         <span class="bar"></span>
         <!-- third child -->
-      </div>
+      </div> <!-- end of nav mobile bar-->
 
       <ul class="navbar__menu">
         <!-- initial navbar section -->
@@ -46,8 +45,8 @@
           <!--target="_blank"- to go to new page-->
         </li>
       </ul>
-    </div>
-  </nav>
+    </div> <!-- end of navbar__container-->
+  </nav> <!-- end of nav-->
 
   <section class="intro_container" id="home">
     <!-- intro section // style in html intro_container section-->
@@ -124,14 +123,14 @@
           text-shadow: 0 0 0.02em rgb(0, 0, 0), 0 0 0.1em black;
         }
       }
-    </style>
+    </style> <!-- end of intro section style-->
     <video id="background-video" autoplay loop muted>
       <source src="images/typingHome.mp4" type="video/mp4" />
     </video>
     <div class="intro_text">
       <p>><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
     </div>
-  </section>
+  </section> <!-- end of intro_container-->
 
   <section class="about">
     <!-- about section // style in html about section-->
@@ -156,7 +155,7 @@
         padding: 1rem;
         object-fit: cover;
       }
-    </style>
+    </style> <!-- end of about style-->
     <div class="container marketing">
       <div class="row featurette">
         <div class="col-md-7">
@@ -174,14 +173,14 @@
             from your peers!
           </p>
           <br />
-        </div>
+        </div> <!-- col-md-7 -->
         <div class="col-md-5">
           <img src="images/background.png" alt="Nature" class="responsive">
         </div>
-      </div>
-    </div>
+      </div> <!-- row featurette -->
+    </div> <!-- container marketing -->
     <div class="skew-cc"></div>
-  </section>
+  </section> <!-- end of about-->
 
   <section class="additional_info">
     <!-- additional_info section // style in html additional_info section-->
@@ -223,11 +222,12 @@
       .btn {
         align-self: center;
       }
-    </style>
+    </style> <!-- end of additional_info style-->
     <div class="container marketing">
       <!-- <hr class="top_divider" /> -->
       <div class="row align-items-md-stretch">
         <div class="col-md-6 p-3">
+          <!-- First Card -->
           <div class="h-100 p-5 rounded-3" id="meeting">
             <h2 class="meet_h2">When Do We Meet?</h2>
             <br />
@@ -237,9 +237,10 @@
             <br />
             <a class="btn btn-lg" href="contact.html">Get in the loop</a>
           </div>
-        </div>
+        </div> <!-- end of col-md-6 p-3 -->
         <br />
         <div class="col-md-6 p-3">
+          <!-- Second Card -->
           <div class="h-100 p-5 rounded-3" id="goals">
             <div class="accordion" id="accordionExample">
               <h2>Goals</h2>
@@ -293,10 +294,10 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
+        </div> <!-- end of col-md-6 p-3 -->
+      </div> <!-- row align-items-md-stretch -->
+    </div> <!-- end of container marketing -->
+  </section> <!-- end of additional_info -->
 
   <section class="slide_show">
     <!-- slide_show section // style in html slide_show section-->
@@ -349,20 +350,21 @@
           height: 22rem;
         }/* Prob with responsive 
       }*/
-    </style>
+    </style> <!-- end of slide_show style-->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+      </div> <!-- end of carousel-indicators / html logic -->
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <!-- first card -->
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
-            <image href="images/sleek.jpg" id="slide" />
+            <image href="images/sleek.jpg" id="slide" />  <!-- first card img-->
           </svg>
 
           <div class="container" id="slide_text">
@@ -374,13 +376,14 @@
               <p><a class="btn btn-lg" href="contact.html">Suggestions?</a>
               </p>
             </div>
-          </div>
-        </div>
+          </div> <!-- end of container -->
+        </div> <!-- end of carousel-item active / first card -->
         <div class="carousel-item">
+          <!-- second card -->
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
             <rect width="100%" height="100%" fill="#777" />
-            <image href="images/group.jpg" id="slide" />
+            <image href="images/group.jpg" id="slide" />  <!-- second card img-->
             <!-- <image href="images/fair.jpg" height="100%" width="100%" object-fit="cover"/> -->
           </svg>
 
@@ -393,13 +396,14 @@
               <p>
               <p><a class="btn btn-lg" href="blog.html">Read More</a></p>
             </div>
-          </div>
-        </div>
+          </div> <!-- end of container -->
+        </div> <!-- end of carousel-item active / second card -->
         <div class="carousel-item">
+          <!-- third card -->
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777" />
-            <image href="images/motherboard.jpg" id="slide" />
+            <rect width="100%" height="100%" fill="#777" /> 
+            <image href="images/motherboard.jpg" id="slide" />  <!-- third card img-->
           </svg>
 
           <div class="container" id="slide_text">
@@ -412,8 +416,8 @@
                 <a class="btn btn-lg" href="blog.html">Read More</a>
               </p>
             </div>
-          </div>
-        </div>
+          </div> <!-- end of container -->
+        </div> <!-- end of carousel-item active / third card -->
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -423,8 +427,8 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-  </section>
+    </div> <!-- end of col-md-6 p-3 -->
+  </section> <!-- end of slide_show -->
 
   <footer>
     <!-- footer section // no style guide in html -->
@@ -447,12 +451,12 @@
                   <a href="blog.html" class="footer__links" id="home-page"><b>Contact</b></a>
                 </li>
               </ul>
-            </div>
+            </div> 
             <div class="description overflow-hidden text-center">
               <hr />
               Designed by Ethan Kupka @ 2023
             </div>
-          </div>
+          </div> <!-- end of col-4 -->
           <div class="col-5" id="contact_email">
             <div class="email_text">JOIN<span> our newsletter</span></div>
             <div>
@@ -465,17 +469,17 @@
               </form>
               <span id="msg"></span>
             </div>
-          </div>
+          </div> <!-- end of col-5 -->
         </div>
-      </div>
+      </div> <!-- end of social__media -->
     </div>
-  </footer>
+  </footer> <!-- end of footer__container -->
 
   <!-- BootStrap JS -->
-  <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> // bootstrap link-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> <!-- end of BootStrap JS -->
   <!-- Personal JS -->
   <script src="main.js"></script>
   <!-- Home Typing JS -->
@@ -522,7 +526,7 @@
     document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
       if (textArray.length) setTimeout(type, newTextDelay + 250);
     });
-  </script>
-</body>
+  </script> <!-- end of Home Typing Text -->
+</body> <!-- end of body -->
 
 </html>

@@ -1,0 +1,101 @@
+# C4.github.io
+
+Documentation for following Years to help maintain the website.
+
+Link: https://cornellcollegec4club.github.io/C4.github.io/
+
+\*\*Designed and Updated by Ethan Kupka as of Sept.2022-May.2023
+
+-About the project:
+This project is mainly a static website for the computer science club at Cornell College.
+Mainly Used vanilla JS, bootstrap, googleSheets, html, sass, and css.
+If you want to mess around with it make a copy of the project and do that rather chang the main code.
+
+Four main sections in the project:
+-blogPosts File (Handles the html pages for blog posts, has a file for images used by those html files)
+-images file (Handles the general images used by the three main html files of website and a file for not in use images)
+-styles file (Handles the style of html pages)
+-main html files and main js file
+
+---
+
+-Resources Used:
+https://www.youtube.com/watch?v=4k3AiwXrfig&t=88s -bs help
+https://www.youtube.com/watch?v=jXt7yYvCYhc&t=7s -bs help
+https://getbootstrap.com/ - bs
+
+https://www.youtube.com/watch?v=Jqsb06RlQ6g -style
+
+https://www.youtube.com/watch?v=a8Om25FbaJA&t=269s -email to googleSheet !important
+https://www.youtube.com/watch?v=dOIUClmtlcc&t=514s -email to googleSheet !important
+
+https://www.youtube.com/watch?v=8Dd7KRpKeaE -git
+https://www.youtube.com/watch?v=p1QU3kLFPdg&t=15s -launching
+https://www.youtube.com/watch?v=o5g-lUuFgpg, https://www.youtube.com/watch?v=OltY8JIaP-4 -launching on git
+https://docs.github.com/en/pages/quickstart -gitHub
+
+---
+
+-Frequent Updates:
+Most of the Updates would be for the blog.html page adding posts and changing information. In general the section names are self explaining.
+
+Two main sections that may change are  <Section class="latest_news" id="home"> and <section class="blog_feed">.
+
+--SOP: New Posts(Making a new html page from the blogPostTemp.html in blogPost file.
+You will simply copy the file and 'save as' as a new name and then you will be able to make changes to the copy.
+You will have to use the name of the new html file to call it from the blog.html. Without this link you wont be able to reach the post. For Ex look in the blog.html at the herf quotes (<a href="blogPosts/bootstrapExperience(EK).html" class="stretched-link">Continue reading</a>) This code takes you to the post. So when making a new html page for a post you will have to add a card to the blog.html)
+
+--SOP: Adding more blog cards in blog.html(Go to the blog_feed section and find the myItems tag. After locating you will copy everything below and change id to the appropriate post num:
+
+<div class="post col-md-6 " id="post#"> <!-- basic card -->
+<!-- <h5 class="card-title"><a href="#">Card tne</a></h5> -->
+    <div
+    class="post row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="post col p-4 d-flex flex-column position-static">
+            <h3 class="card-title mb-0">Bootstrap & Sass</h3>
+            <div class="mb-2 mt-1 text-muted">//: Dec 22, 2022 | 
+            <div class="theme d-inline-block mb-2">Skills
+                </div>
+                </div>
+                      <p class="card-text mb-auto">In the following there will be the experiences of a 2023 senior utilizing Bootstrap and 
+                        the web style language Sass in his capstone project.</p>
+                      <a href="blogPosts/bootstrapExperience(EK).html" class="stretched-link">Continue reading</a>
+                </div>
+            <div class="col-auto d-none d-lg-block">
+        <img src="blogPosts/postImages/bootstrap.png" width="250" height="250" alt="Nature" focusable="coolStuff"
+        class="responsive">
+        </div>
+    </div>
+</div>    
+                
+**There are two diff types of card one lighter and one darker color: You can change between the two by adding (id="purpPost") to the <div class="post row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"> tag. 
+
+After Copying add the code before the <!-- End of myItems // Blog list -->
+
+**There may be empty cards already so before making a new one check. Also try making two knew cards at a time rather one.)
+
+--SOP: (General) New images or links to pages(To change the image of a card or the forward link of a button, you have to find the logic of it. It should look something like: <image href="images/sleek.jpg" id="slide" /> <!-- first card img--> or <p><a class="btn btn-lg" href="contact.html">Suggestions?</a> <!-- first card forward link-->. You will change whats in the herf quotations. It is similar to opening a file in terminal. You have to map it and put the name of the file you are using.)
+
+---
+
+-Secondary Updates:
+In the index.html file in the additional_info section there will be meeting times that may need to change: <section class="additional_info">.
+Other changes will be in the slide_show section changing the info in the slide_show cards: <section class="slide_show">.
+
+--SOP: Change info for slide show (Search for  <!-- first card -->, <!-- second card -->, <!-- third card --> parts.
+Simply just change the text in the tags or change the image in <image href="images/sleek.jpg" id="slide" /> <!-- first card img--> or change the forward link in <p><a class="btn btn-lg" href="contact.html">Suggestions?</a> (by linking a new image in the herf quotes))
+
+In the contacts.html file you may change the user info.
+ --SOP: Change member info (Search for <!-- first member -->, <!-- second member -->, <!-- third member -->, <!-- fourth member --> all have closing comment to the tag. Then you will change the members text)
+
+---
+
+-Problems:
+Some frequent problems lye in the contact and gmail send to googleSheet. I had to use google app script. You cant add the js logic of the contact to the main js file because it messes with the logic of the email to googleSheet.
+
+---
+
+-Updates/ Things to work on:
+One major thing to add to the project is a data base to make a non-static page for the blog posts.
+Implement a card for ig user name in contact.html file.
+Implement a button that takes you to the clubs declaration / rules.

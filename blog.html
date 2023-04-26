@@ -17,7 +17,6 @@
   <link href="styles/blog.css" rel="stylesheet" />
 </head>
 
-
 <body>
   <!-- <style>@import url("https://fonts.googleapis.com/css2?family=Jura:wght@600&display=swap");</style> -->
   <nav class="navbar">
@@ -32,7 +31,7 @@
         <!-- second child -->
         <span class="bar"></span>
         <!-- third child -->
-      </div>
+      </div> <!-- end of nav mobile bar-->
 
       <ul class="navbar__menu">
         <!-- initial navbar section -->
@@ -47,8 +46,8 @@
           <!--target="_blank"- to go to new page-->
         </li>
       </ul>
-    </div>
-  </nav>
+    </div> <!-- end of navbar__container-->
+  </nav> <!-- end of nav-->
 
   <Section class="latest_news" id="home">
     <!-- latest_news section // style in html latest_news section-->
@@ -80,7 +79,7 @@
         font-size: 1.25rem;
         align-content: center;
       }
-    </style>
+    </style> <!-- end of latest_news style -->
     <div class="p-2 p-md-5 mb-4 rounded">
       <div class="col-md-12 px-0">
         <h1 class="lnt display-4 fst-italic">The Latest News!</h1>
@@ -96,7 +95,7 @@
                 <br />
                 <!-- <a class="btn btn-lg" href="contact.html">Get in the loop</a> -->
               </div>
-            </div>
+            </div> <!-- end of news col-md-6 p-3 -->
             <br />
             <div class="news col-md-6 p-3">
               <div class="h-100 p-5 rounded-3" id="monthly">
@@ -106,14 +105,14 @@
                 <br />
                 <!-- <a class="btn btn-lg" href="contact.html">Get in the loop</a> -->
               </div>
-            </div>
+            </div> <!-- end of news col-md-6 p-3 -->
           </div>
-        </div>
+        </div> <!-- end of container marketing -->
         <!-- <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
           <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p> -->
-      </div>
-    </div>
-  </Section>
+      </div> <!-- end of col-md-12 px-0 -->
+    </div> <!-- end of p-2 p-md-5 mb-4 rounded -->
+  </Section> <!-- end of latest_news -->
 
   <br/>
 
@@ -143,7 +142,7 @@
       .date {
         color: var(--clr-tdf);
       }
-    </style>
+    </style> <!-- end of recent_blog style -->
     <br>
     <h1 class="highlight display-4 fst-italic">Highlight Blog!</h1>
     <br/>
@@ -164,7 +163,7 @@
             </ul>
           </li> -->
         </ul>
-      </div>
+      </div> <!-- end of meta -->
       <div class="description">
         <h1>Have Any Experiences?</h1>
         <h2>Contact Us!</h2>
@@ -172,14 +171,12 @@
           back to you on what we need to make your blog post happen!</p>
         <br />
         <a href="contact.html">Continue reading</a>
-      </div>
-    </div>
+      </div> <!-- end of description -->
+    </div> <!-- end of blog-card -->
     <br>
     <!-- <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
           <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p> -->
-    </div>
-    </div>
-  </Section>
+  </Section> <!-- end of recent_blog -->
 
   <section class="blog_feed">
      <!-- blog_feed section // style in html blog_feed section-->
@@ -245,7 +242,7 @@
           display: none !important;
         }
       }
-    </style>
+    </style> <!-- end of blog_feed style -->
       <div class="col-md-12 mb-4 px-0">
         <h1 class="blogtitle display-4 fst-italic">Our Community Blogs</h1>
         <div class="container marketing">
@@ -255,18 +252,18 @@
                 <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()"
                   placeholder="Search for titles...">
               </div>
-            </div>
+            </div> <!-- end of row -->
             <div class="button_theme" id="myBtnContainer">
               <button class="btn2" id="btn_theme" onclick="clearAll('all')">Show All</button>
               <button class="btn" id="btn_theme" onclick="filter('Technology')">Technology</button>
               <button class="btn" id="btn_theme" onclick="filter('Career Experiences')">Career Experiences</button>
               <button class="btn" id="btn_theme" onclick="filter('Skills')">Skills</button>
               <button class="btn" id="btn_theme" onclick="filter('Other')">Other</button>
-            </div>
+            </div> <!-- end of button_theme -->
             <br />
             <div id="myItems">
               <div class="row mb-2">
-                <div class="post col-md-6 " id=""> <!-- basic card -->
+                <div class="post col-md-6 " id="post1"> <!-- basic card -->
                   <!-- <h5 class="card-title"><a href="#">Card tne</a></h5> -->
                   <div
                     class="post row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
@@ -284,28 +281,28 @@
                         class="responsive">
                     </div>
                   </div>
-                </div>
+                </div> <!-- end of post 1 -->
 
-                <div class="post col-md-6 " id=""> <!-- purple card -->
+                <div class="post col-md-6 " id="post2"> <!-- purple card -->
                   <!-- <h5 class="card-title"><a href="#">Card tne</a></h5> -->
                   <div
                     class="post row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="purpPost">
                     <div class="post col p-4 d-flex flex-column position-static">
-                      <h3 class="card-title mb-0">Open Card</h3>
-                      <div class="mb-2 mt-1 text-muted">//: Month ##, 20## | <div class="theme d-inline-block mb-2">Other
+                      <h3 class="card-title mb-0">Game Jam</h3>
+                      <div class="mb-2 mt-1 text-muted">//: April 13, 2023 | <div class="theme d-inline-block mb-2">Other & Skills
                         </div>
                       </div>
-                      <p class="card-text mb-auto" id="purpText">This is a open card, contact us if you have a experience to share.</p>
-                      <a href="#" class="stretched-link">Continue reading</a>
+                      <p class="card-text mb-auto" id="purpText">This is over our Game Jam event hosted for the first time this year!</p>
+                      <a href="blogPosts/gameJam.html" class="stretched-link">Continue reading</a> <!-- purple card -->
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                      <img src="images/postGen.jpg" width="250" height="250" alt="Nature" focusable="coolStuff"
+                      <img src="blogPosts/postImages/gJCover.webp" width="250" height="250" alt="Nature" focusable="coolStuff"
                         class="responsive">
                     </div>
                   </div>
-                </div>
+                </div> <!-- end of post 2 -->
 
-                <div class="post col-md-6 " id=""> <!-- purple card -->
+                <div class="post col-md-6 " id="post3"> <!-- purple card -->
                   <!-- <h5 class="card-title"><a href="#">Card tne</a></h5> -->
                   <div
                     class="post row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" id="purpPost">
@@ -322,9 +319,9 @@
                         class="responsive">
                     </div>
                   </div>
-                </div>
+                </div> <!-- end of post 3 -->
 
-                <div class="post col-md-6" id="">
+                <div class="post col-md-6" id="post4"> <!-- basic card -->
                   <div
                     class="post row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="post col p-4 d-flex flex-column position-static">
@@ -347,12 +344,13 @@
                       </svg> -->
                     </div>
                   </div>
-                </div>
-              </div> <!-- End of Blog list -->
-            </div>
-          </div>
-        </div>
-  </section>
+                </div> <!-- end of post 4 -->
+              </div> <!-- row mb-2 -->
+            </div> <!-- end of myItems -->
+          </div> <!-- container -->
+        </div> <!-- container marketing -->
+      </div> <!-- col-md-12 mb-4 px-0 -->
+  </section> <!-- end of blog_feed -->
 
   <footer>
     <!-- footer section // no style guide in html -->
@@ -380,7 +378,7 @@
               <hr />
               Designed by Ethan Kupka @ 2023
             </div>
-          </div>
+          </div> <!-- end of col-4 -->
           <div class="col-5" id="contact_email">
             <div class="email_text">JOIN<span> our newsletter</span></div>
             <div>
@@ -393,16 +391,16 @@
               </form>
               <span id="msg"></span>
             </div>
-          </div>
+          </div> <!-- end of col-5 -->
         </div>
-      </div>
-    </div>
-  </footer>
+      </div> <!-- social__media -->
+    </div> <!-- footer__container -->
+  </footer> <!-- end of footer -->
 
   <!-- BootStrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> <!-- end of bootStrap -->
   <!-- Personal JS -->
   <script src="main.js"></script>
  <!-- Button Sort for blog_feed JS -->
@@ -425,7 +423,7 @@
         cards[i].classList.remove("d-none")
       }
     }
-  </script>
-</body>
+  </script> <!-- end of blog_feed JS -->
+</body> <!-- end of body -->
 
 </html>
