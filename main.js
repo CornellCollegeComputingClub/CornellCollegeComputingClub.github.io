@@ -40,6 +40,23 @@ const msg = document.getElementById('msg')
             })
             .catch(error => console.error('Error!', error.message))
           })
+   
+/* Blog Type Sort ------------------------------------------------------------------- */
+function myFunction() {
+  var input, filter, cards, cardContainer, h5, title, i;
+  input = document.getElementById("myFilter");
+  filter = input.value.toUpperCase();
+  cardContainer = document.getElementById("myItems");
+  cards = cardContainer.getElementsByClassName("post");
+  for (i = 0; i < cards.length; i++) {
+      title = cards[i].querySelector(".post h3.card-title");
+      if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+          cards[i].style.display = "";
+      } else {
+          cards[i].style.display = "none";
+      }
+  }
+}
 
 /* Home Typing Text ------------------------------------------------------------------- */
 // const typedTextSpan = document.querySelector(".typed-text");
@@ -83,23 +100,6 @@ const msg = document.getElementById('msg')
 // document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
 //   if(textArray.length) setTimeout(type, newTextDelay + 250);
 // });
-         
-/* Blog Type Sort ------------------------------------------------------------------- */
-function myFunction() {
-  var input, filter, cards, cardContainer, h5, title, i;
-  input = document.getElementById("myFilter");
-  filter = input.value.toUpperCase();
-  cardContainer = document.getElementById("myItems");
-  cards = cardContainer.getElementsByClassName("post");
-  for (i = 0; i < cards.length; i++) {
-      title = cards[i].querySelector(".post h3.card-title");
-      if (title.innerText.toUpperCase().indexOf(filter) > -1) {
-          cards[i].style.display = "";
-      } else {
-          cards[i].style.display = "none";
-      }
-  }
-}
 
 /* Blog Theme Button Sort ------------------------------------------------------------------- */
 // function sortTheme('filter'){

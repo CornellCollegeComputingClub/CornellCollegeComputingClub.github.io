@@ -43,7 +43,7 @@ Two main sections that may change are  <Section class="latest_news" id="home"> a
 
 --SOP: New Posts(Making a new html page from the blogPostTemp.html in blogPost file.
 You will simply copy the file and 'save as' as a new name and then you will be able to make changes to the copy.
-You will have to use the name of the new html file to call it from the blog.html. Without this link you wont be able to reach the post. For Ex look in the blog.html at the herf quotes (<a href="blogPosts/bootstrapExperience(EK).html" class="stretched-link">Continue reading</a>) This code takes you to the post. So when making a new html page for a post you will have to add a card to the blog.html)
+You will have to use the name of the new html file to call it from the blog.html. Without this link you wont be able to reach the post. For Ex look in the blog.html at the herf quotes (<a href="blogPosts/bootstrapExperience(EK).html" class="stretched-link">Continue reading</a>) This code takes you to the post. So when making a new html page for a post you will have to add a card to the blog.html) You can get help writing the paragraphs to the blog with chatgbt!
 
 --SOP: Adding more blog cards in blog.html(Go to the blog_feed section and find the myItems tag. After locating you will copy everything below and change id to the appropriate post num:
 
@@ -99,3 +99,4 @@ Some frequent problems lye in the contact and gmail send to googleSheet. I had t
 One major thing to add to the project is a data base to make a non-static page for the blog posts.
 Implement a card for ig user name in contact.html file.
 Implement a button that takes you to the clubs declaration / rules.
+Create Insta Account
